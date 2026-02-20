@@ -1,0 +1,25 @@
+import { RetryConfig } from './event.types';
+
+///////////////////////////////////////////////////////////////////////////////
+
+export const ConsumerGroups = {
+    PARKING_MANAGEMENT : 'parking-management-group',
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+export const DEAD_LETTER_SUFFIX = '.dlq';
+
+///////////////////////////////////////////////////////////////////////////////
+
+export const DEFAULT_QUEUE_CONCURRENCY = 5;
+
+///////////////////////////////////////////////////////////////////////////////
+
+export const DEFAULT_RETRY_CONFIG: RetryConfig = {
+    maxRetries       : 3,
+    initialDelayMs   : 1000,
+    backoffFactor    : 2,
+    maxDelayMs       : 30000,
+    queueConcurrency : DEFAULT_QUEUE_CONCURRENCY,
+};
