@@ -1,0 +1,17 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Parking Management",
+    "version": "1.0",
+    "description": "PArking app\nAdditional details about the service: This API allows interaction with user, enabling actions like creation, update, retrieval, search, and deletion."
+  },
+  "paths": {},
+  "components": {
+    "schemas": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost:1975/api/v1"
+    }
+  ]
+}
